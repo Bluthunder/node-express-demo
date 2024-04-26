@@ -11,8 +11,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: ghademo.fnnnrf2.mongodb.net
-      MONGODB_USERNAME: kaushiktd
-      MONGODB_PASSWORD: rZIVz3EvfZ8uioJ0
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 3000
 
     environment: testing
